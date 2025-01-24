@@ -90,6 +90,10 @@ window.onload = function () {
                 }),
                 text: new ol.style.Text({
                     font: 'bold 15px Arial, sans-serif',
+                    stroke: new ol.style.Stroke({
+                        color: "white",
+                        width: 0.9
+                    }),
                     fill: new ol.style.Fill({
                         color: feature.get("color")
                     }),

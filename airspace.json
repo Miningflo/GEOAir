@@ -2,6 +2,7 @@
   {
     "name": "FL660\nTBLISI RADAR\n7000FT",
     "type": "polygon",
+    "color": "darkviolet",
     "points": [
       "411800N 0450100E",
       "410700N 0432800E",
@@ -17,7 +18,7 @@
     ]
   },
   {
-    "name": "7000FT\nKUTAISI CTR\nGND",
+    "name": "7000FT - KUTAISI CTR - GND",
     "type": "circle",
     "color": "purple",
     "center": "421777N 0424800E",
@@ -39,6 +40,7 @@
   {
     "name": "TRA A",
     "type": "polygon",
+    "color": "darkgreen",
     "points": [
       "423489N 0419054E",
       "423909N 0413530E",
@@ -49,6 +51,7 @@
   {
     "name": "TRA B",
     "type": "polygon",
+    "color": "darkgreen",
     "points": [
       "426161N 0430779E",
       "426631N 0425217E",
@@ -59,6 +62,7 @@
   {
     "name": "TRA C",
     "type": "polygon",
+    "color": "darkgreen",
     "points": [
       "419789N 0430682E",
       "423878N 0431361E",
@@ -67,20 +71,20 @@
     ]
   },
   {
-    "name": "RANGE A\nRESTRICTED",
+    "name": "7000FT - RANGE A - RESTRICTED - GND",
     "type": "circle",
     "center": "418420N 0417980E",
     "radius": 5
   },
   {
-    "name": "TSA A",
+    "name": "FL100 - TSA A - GND",
     "type": "circle",
     "color": "darkorange",
     "center": "418420N 0417980E",
     "radius": 10
   },
   {
-    "name": "RANGE B\nRESTRICTED",
+    "name": "7000FT\nRANGE B\nRESTRICTED\nGND",
     "type": "polygon",
     "points": [
       "423161N 0427083E",
@@ -90,7 +94,7 @@
     ]
   },
   {
-    "name": "TSA B",
+    "name": "3500FT\nTSA B\nGND",
     "type": "polygon",
     "color": "orange",
     "points": [
