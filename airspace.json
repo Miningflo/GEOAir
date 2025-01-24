@@ -23,7 +23,7 @@
     "radius": 12
   },
   {
-    "name": "AA\nDANGER",
+    "name": "AIRSPACE A\nDANGER",
     "type": "polygon",
     "points": [
       "423489N 0419054E",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "name": "AB\nDANGER",
+    "name": "AIRSPACE B\nDANGER",
     "type": "polygon",
     "points": [
       "426161N 0430779E",
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "name": "AC\nDANGER",
+    "name": "AIRSPACE C\nDANGER",
     "type": "polygon",
     "points": [
       "419789N 0430682E",
@@ -53,13 +53,13 @@
     ]
   },
   {
-    "name": "RA\nDANGER",
+    "name": "RANGE A\nDANGER",
     "type": "circle",
     "center": "418420N 0417980E",
     "radius": 5
   },
   {
-    "name": "RB\nDANGER",
+    "name": "RANGE B\nDANGER",
     "type": "polygon",
     "points": [
       "423161N 0427083E",
