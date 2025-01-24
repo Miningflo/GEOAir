@@ -1,30 +1,42 @@
 [
   {
-    "name": "WEST",
-    "point": [
-      42.13007,
-      42.3003
-    ]
+    "name": "(UGKO) WEST",
+    "point": "421301N 0423003E",
+    "type": "VFR"
   },
   {
     "name": "NORTH",
-    "point": [
-      42.265417,
-      42.501433
-    ]
+    "point": "422654N 0425014E",
+    "type": "VFR"
   },
   {
-    "name": "EAST",
-    "point": [
-      42.2028833,
-      42.6524167
-    ]
+    "name": "(UGKO) EAST",
+    "point": "422029N 0426524E",
+    "type": "VFR"
   },
   {
     "name": "SOUTH",
-    "point": [
-      42.1046167,
-      42.5304
-    ]
+    "point": "421046N 0425304E",
+    "type": "VFR"
+  },
+  {
+    "name": "BLAMO",
+    "point": "422169N 0427526E",
+    "type": "IFR"
+  },
+  {
+    "name": "KIKA",
+    "point": "422608N 0422217E",
+    "type": "IFR"
+  },
+  {
+    "name": "SEAT",
+    "point": "421425N 0422036E",
+    "type": "IFR"
+  },
+  {
+    "name": "ENZO",
+    "point": "422092N 0422639E",
+    "type": "IFR"
   }
 ]

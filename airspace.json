@@ -17,13 +17,27 @@
     ]
   },
   {
-    "name": "7000FT\nKUTAISI TMA\nGND",
+    "name": "7000FT\nKUTAISI CTR\nGND",
     "type": "circle",
+    "color": "purple",
     "center": "421777N 0424800E",
     "radius": 12
   },
   {
-    "name": "AIRSPACE A\nDANGER",
+    "name": "7000FT\nKUTAISI TMA\n2500FT",
+    "type": "polygon",
+    "color": "darkcyan",
+    "points": [
+      "424000N 0421000E",
+      "424000N 0427000E",
+      "423000N 0427000E",
+      "423000N 0430000E",
+      "419000N 0430000E",
+      "419000N 0421000E"
+    ]
+  },
+  {
+    "name": "TRA A",
     "type": "polygon",
     "points": [
       "423489N 0419054E",
@@ -33,7 +47,7 @@
     ]
   },
   {
-    "name": "AIRSPACE B\nDANGER",
+    "name": "TRA B",
     "type": "polygon",
     "points": [
       "426161N 0430779E",
@@ -43,7 +57,7 @@
     ]
   },
   {
-    "name": "AIRSPACE C\nDANGER",
+    "name": "TRA C",
     "type": "polygon",
     "points": [
       "419789N 0430682E",
@@ -53,13 +67,20 @@
     ]
   },
   {
-    "name": "RANGE A\nDANGER",
+    "name": "RANGE A\nRESTRICTED",
     "type": "circle",
     "center": "418420N 0417980E",
     "radius": 5
   },
   {
-    "name": "RANGE B\nDANGER",
+    "name": "TSA A",
+    "type": "circle",
+    "color": "darkorange",
+    "center": "418420N 0417980E",
+    "radius": 10
+  },
+  {
+    "name": "RANGE B\nRESTRICTED",
     "type": "polygon",
     "points": [
       "423161N 0427083E",
@@ -67,5 +88,17 @@
       "423655N 0427740E",
       "423112N 0427667E"
     ]
+  },
+  {
+    "name": "TSA B",
+    "type": "polygon",
+    "color": "orange",
+    "points": [
+      "422361N 0426083E",
+      "424707N 0426166E",
+      "424655N 0430000E",
+      "422312N 0430000E"
+    ]
   }
+
 ]

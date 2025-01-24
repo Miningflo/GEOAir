@@ -43,13 +43,13 @@ window.onload = function () {
         style: function (feature) {
             return new ol.style.Style({
                 image: new ol.style.Icon({
-                    src: "./resources/CRP.png",
+                    src: "./resources/" + feature.get("type") + ".png",
                     scale: 0.05,
                 }),
                 text: new ol.style.Text({
                     font: 'bold 15px Arial, sans-serif',
                     fill: new ol.style.Fill({
-                        color: 'blue'
+                        color: ((feature.get("type") === "VFR") ? 'blue' : 'black')
                     }),
                     text: map.getView().getZoom() >= 10 ? feature.get('name') : "",
                     textAlign: 'center',
@@ -66,10 +66,11 @@ window.onload = function () {
 
     fetch("./points.json").then(response => response.json()).then(points => {
         let features = []
-        points.forEach(CRM => {
+        points.forEach(RP => {
             let point = new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.fromLonLat(CRM.point.reverse())),
-                name: CRM.name,
+                geometry: new ol.geom.Point(ol.proj.fromLonLat(pointconverter(RP.point).reverse())),
+                name: RP.name,
+                type: RP.type
             });
             features.push(point);
         })
@@ -84,13 +85,13 @@ window.onload = function () {
         style: function (feature) {
             return new ol.style.Style({
                 stroke: new ol.style.Stroke({
-                    color: 'red',
+                    color: feature.get("color"),
                     width: 2
                 }),
                 text: new ol.style.Text({
                     font: 'bold 15px Arial, sans-serif',
                     fill: new ol.style.Fill({
-                        color: 'red'
+                        color: feature.get("color")
                     }),
                     text: map.getView().getZoom() >= 7 ? feature.get('name') : "",
                     textAlign: 'center',
@@ -111,27 +112,26 @@ window.onload = function () {
     fetch("./airspace.json").then(response => response.json()).then(areas => {
         let features = []
         areas.forEach(area => {
+            let geometry
             if (area.type === "polygon") {
                 let poly = []
                 area.points.forEach(point => {
                     poly.push(pointconverter(point).reverse())
                 })
-                let polygonFeature = new ol.Feature({
-                    geometry: new ol.geom.Polygon([poly]).transform('EPSG:4326', 'EPSG:3857'),
-                    name: area.name
-                });
-                features.push(polygonFeature);
+                geometry = new ol.geom.Polygon([poly]).transform('EPSG:4326', 'EPSG:3857')
             } else if (area.type === "circle") {
                 let center = ol.proj.fromLonLat(pointconverter(area.center).reverse())
                 let radius = area.radius * 1852
                 var circle = new ol.geom.Circle(center,radius/ol.proj.getPointResolution('EPSG:3857', 1, center))
+                geometry = ol.geom.Polygon.fromCircle(circle,100,90)
 
-                let circleFeature = new ol.Feature({
-                    geometry: ol.geom.Polygon.fromCircle(circle,100,90),
-                    name: area.name
-                })
-                features.push(circleFeature)
             }
+            let feature = new ol.Feature({
+                geometry: geometry,
+                name: area.name,
+                color: area.color ?? "red",
+            })
+            features.push(feature)
 
         })
         areaSource.addFeatures(features);
