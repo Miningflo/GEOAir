@@ -1,5 +1,4 @@
 function pointconverter(point) {
-    console.log(typeof point, point);
     let res = []
     point = point.split(" ")
     point.forEach(coord => {
