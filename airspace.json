@@ -1,6 +1,8 @@
 [
   {
-    "name": "FL660\nTBLISI RADAR\n7000FT",
+    "name": "TBLISI RADAR",
+    "lower": 7000,
+    "upper": 66000,
     "type": "polygon",
     "color": "darkviolet",
     "points": [
@@ -13,19 +15,22 @@
       "436300N 0400100E",
       "427300N 0440100E",
       "425500N 0452500E",
-      "412000N 0467500E",
-      "411800N 0450100E"
+      "412000N 0467500E"
     ]
   },
   {
-    "name": "7000FT - KUTAISI CTR - GND",
+    "name": "KUTAISI CTR",
+    "lower": 0,
+    "upper": 7000,
     "type": "circle",
     "color": "purple",
     "center": "421777N 0424800E",
     "radius": 12
   },
   {
-    "name": "7000FT\nKUTAISI TMA\n2500FT",
+    "name": "KUTAISI TMA",
+    "lower": 2500,
+    "upper": 7000,
     "type": "polygon",
     "color": "darkcyan",
     "points": [
@@ -39,6 +44,8 @@
   },
   {
     "name": "TRA A",
+    "lower": 0,
+    "upper": 20000,
     "type": "polygon",
     "color": "darkgreen",
     "points": [
@@ -50,6 +57,8 @@
   },
   {
     "name": "TRA B",
+    "lower": 0,
+    "upper": 20000,
     "type": "polygon",
     "color": "darkgreen",
     "points": [
@@ -61,6 +70,8 @@
   },
   {
     "name": "TRA C",
+    "lower": 0,
+    "upper": 20000,
     "type": "polygon",
     "color": "darkgreen",
     "points": [
@@ -71,20 +82,26 @@
     ]
   },
   {
-    "name": "7000FT - RANGE A - RESTRICTED - GND",
+    "name": "RANGE A - RESTRICTED",
+    "lower": 0,
+    "upper": 7000,
     "type": "circle",
     "center": "418420N 0417980E",
     "radius": 5
   },
   {
-    "name": "FL100 - TSA A - GND",
+    "name": "TSA A",
+    "lower": 0,
+    "upper": 10000,
     "type": "circle",
     "color": "darkorange",
     "center": "418420N 0417980E",
     "radius": 10
   },
   {
-    "name": "7000FT\nRANGE B\nRESTRICTED\nGND",
+    "name": "RANGE B\nRESTRICTED",
+    "lower": 0,
+    "upper": 7000,
     "type": "polygon",
     "points": [
       "423161N 0427083E",
@@ -94,9 +111,11 @@
     ]
   },
   {
-    "name": "3500FT\nTSA B\nGND",
+    "name": "TSA B",
+    "lower": 0,
+    "upper": 7000,
     "type": "polygon",
-    "color": "orange",
+    "color": "darkorange",
     "points": [
       "422361N 0426083E",
       "424707N 0426166E",

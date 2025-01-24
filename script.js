@@ -10,6 +10,12 @@ function pointconverter(point) {
     return res
 }
 
+function convert(limit){
+    if(limit === 0) return "GND"
+    if(limit <= 7000) return limit + "FT"
+    return "FL" + (Math.floor(limit/500))*5
+}
+
 
 window.onload = function () {
     let control
@@ -117,22 +123,26 @@ window.onload = function () {
         let features = []
         areas.forEach(area => {
             let geometry
+            let joinchar = ""
             if (area.type === "polygon") {
                 let poly = []
                 area.points.forEach(point => {
                     poly.push(pointconverter(point).reverse())
                 })
                 geometry = new ol.geom.Polygon([poly]).transform('EPSG:4326', 'EPSG:3857')
+                joinchar = "\n"
             } else if (area.type === "circle") {
                 let center = ol.proj.fromLonLat(pointconverter(area.center).reverse())
                 let radius = area.radius * 1852
                 var circle = new ol.geom.Circle(center,radius/ol.proj.getPointResolution('EPSG:3857', 1, center))
                 geometry = ol.geom.Polygon.fromCircle(circle,100,90)
-
+                joinchar = " - "
             }
+
+            let name = convert(area.upper) + joinchar + area.name + joinchar + convert(area.lower)
             let feature = new ol.Feature({
                 geometry: geometry,
-                name: area.name,
+                name: name,
                 color: area.color ?? "red",
             })
             features.push(feature)
