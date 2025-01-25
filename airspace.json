@@ -34,12 +34,10 @@
     "type": "polygon",
     "color": "darkcyan",
     "points": [
-      "419000N 0421000E",
-      "424000N 0421000E",
-      "424000N 0427000E",
-      "423000N 0427000E",
-      "423000N 0430000E",
-      "419000N 0430000E"
+      "419000N 0420500E",
+      "424500N 0420500E",
+      "424500N 0429500E",
+      "419000N 0429500E"
     ]
   },
   {
@@ -82,46 +80,25 @@
     ]
   },
   {
-    "name": "RANGE A - RESTRICTED",
+    "name": "RANGE A\nRESTRICTED",
     "lower": 0,
-    "upper": 7000,
-    "type": "circle",
-    "center": "418420N 0417980E",
-    "radius": 5
-  },
-  {
-    "name": "TSA A",
-    "lower": 0,
-    "upper": 10000,
-    "type": "circle",
-    "color": "darkorange",
-    "center": "418420N 0417980E",
-    "radius": 10
-  },
-  {
-    "name": "RANGE B\nRESTRICTED",
-    "lower": 0,
-    "upper": 7000,
+    "upper": 15000,
     "type": "polygon",
     "points": [
-      "423161N 0427083E",
-      "423707N 0427166E",
-      "423655N 0427740E",
-      "423112N 0427667E"
+      "417000N 0416000E",
+      "417950N 0414500E",
+      "418859N 0419000E",
+      "417000N 0419700E"
+
     ]
   },
   {
-    "name": "TSA B",
+    "name": "RANGE B - RESTRICTED",
     "lower": 0,
-    "upper": 7000,
-    "type": "polygon",
-    "color": "darkorange",
-    "points": [
-      "422361N 0426083E",
-      "424707N 0426166E",
-      "424655N 0430000E",
-      "422312N 0430000E"
-    ]
+    "upper": 20000,
+    "type": "circle",
+    "center": "415600N 0437500E",
+    "radius": 14
   }
 
 ]
