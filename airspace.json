@@ -43,20 +43,20 @@
   {
     "name": "TRA A",
     "lower": 0,
-    "upper": 20000,
+    "upper": 25000,
     "type": "polygon",
     "color": "darkgreen",
     "points": [
-      "419381N 0418508E",
+      "420000N 0418508E",
       "423489N 0419054E",
-      "423909N 0413530E",
-      "419786N 0412970E"
+      "424130N 0410100E",
+      "420800N 0409500E"
     ]
   },
   {
     "name": "TRA B",
     "lower": 0,
-    "upper": 20000,
+    "upper": 35000,
     "type": "polygon",
     "color": "darkgreen",
     "points": [
@@ -87,7 +87,7 @@
     "points": [
       "417000N 0416000E",
       "417950N 0414500E",
-      "418859N 0419000E",
+      "418860N 0419000E",
       "417000N 0419700E"
 
     ]
@@ -99,6 +99,19 @@
     "type": "circle",
     "center": "415600N 0437500E",
     "radius": 14
+  },
+  {
+    "name": "TANKER",
+    "lower": 20000,
+    "upper": 30000,
+    "type": "polygon",
+    "color": "darkorange",
+    "points": [
+      "423616N 0421117E",
+      "427773N 0421742E",
+      "428624N 0410767E",
+      "424455N 0410214E"
+    ]
   }
 
 ]
