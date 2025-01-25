@@ -38,5 +38,25 @@
     "name": "ENZO",
     "point": "422092N 0422639E",
     "type": "IFR"
+  },
+  {
+    "name": "BATUMI",
+    "point": "416097N 0416002E",
+    "type": "AIRPORT"
+  },
+  {
+    "name": "KOBULETI",
+    "point": "419292N 0418644E",
+    "type": "AIRPORT"
+  },
+  {
+    "name": "KUTAISI",
+    "point": "421767N 0424825E",
+    "type": "AIRPORT"
+  },
+  {
+    "name": "SUKHUMI",
+    "point": "428582N 0411281E",
+    "type": "AIRPORT"
   }
 ]
