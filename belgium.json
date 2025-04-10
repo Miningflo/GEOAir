@@ -127,6 +127,42 @@
     "radius": 3
   },
   {
+    "name": "FLORENNES CTR",
+    "lower": 0,
+    "upper": 3500,
+    "type": "circle",
+    "color": "gray",
+    "center": "501436N 0043845E",
+    "radius": 9
+  },
+  {
+    "name": "BEAUVECHAIN CTR",
+    "lower": 0,
+    "upper": 2500,
+    "type": "circle",
+    "color": "gray",
+    "center": "504528N 0044601E",
+    "radius": 9
+  },
+  {
+    "name": "SAINT-HUBERT CTR",
+    "lower": 0,
+    "upper": 3500,
+    "type": "circle",
+    "color": "gray",
+    "center": "500203N 0052624E",
+    "radius": 6
+  },
+  {
+    "name": "BERTRIX CTR",
+    "lower": 0,
+    "upper": 3500,
+    "type": "circle",
+    "color": "gray",
+    "center": "495330N 0051326E",
+    "radius": 6
+  },
+  {
     "name": "LUXEMBOURG CTR",
     "lower": 0,
     "upper": 2500,

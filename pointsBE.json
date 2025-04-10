@@ -5,23 +5,73 @@
     "type": "BULL"
   },
   {
-    "name": "WHISKY",
+    "name": "WHISKY\nEBBL",
     "point": "510841N 0051911E",
     "type": "IFR"
   },
   {
-    "name": "ECHO",
+    "name": "ECHO\nEBBL",
     "point": "511646N 0050150E",
     "type": "IFR"
   },
   {
-    "name": "LIBVA",
+    "name": "LIBVA\nEBLG",
     "point": "504542N 0053830E",
     "type": "IFR"
   },
   {
-    "name": "ALHUV",
+    "name": "ALHUV\nEBLG",
     "point": "503914N 0052814E",
     "type": "IFR"
+  },
+  {
+    "name": "ULTAV",
+    "point": "504744N 0052855E",
+    "type": "RNAV"
+  },
+  {
+    "name": "CERHU",
+    "point": "502902N 0052944E",
+    "type": "RNAV"
+  },
+  {
+    "name": "UNLUP",
+    "point": "501694N 0052948E",
+    "type": "RNAV"
+  },
+  {
+    "name": "FAGVE",
+    "point": "501009N 0053010E",
+    "type": "RNAV"
+  },
+  {
+    "name": "ERPUD",
+    "point": "510307N 0050285E",
+    "type": "RNAV"
+  },
+  {
+    "name": "DOCWAW",
+    "point": "503736N 0045044E",
+    "type": "RNAV"
+  },
+  {
+    "name": "UDRUR",
+    "point": "502495N 0050492E",
+    "type": "RNAV"
+  },
+  {
+    "name": "BBL",
+    "point": "511004N 0052816E",
+    "type": "TACAN"
+  },
+  {
+    "name": "BBE",
+    "point": "504525N 0044608E",
+    "type": "TACAN"
+  },
+  {
+    "name": "BFS",
+    "point": "501429N 0043912E",
+    "type": "TACAN"
   }
 ]
