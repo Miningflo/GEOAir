@@ -149,7 +149,7 @@
     "lower": 0,
     "upper": 3500,
     "type": "circle",
-    "color": "gray",
+    "color": "darkcyan",
     "center": "500203N 0052624E",
     "radius": 6
   },
@@ -158,7 +158,7 @@
     "lower": 0,
     "upper": 3500,
     "type": "circle",
-    "color": "gray",
+    "color": "darkcyan",
     "center": "495330N 0051326E",
     "radius": 6
   },
