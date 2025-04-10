@@ -1,0 +1,27 @@
+[
+  {
+    "name": "BULLSEYE",
+    "point": "511000N 0050500E",
+    "type": "BULL"
+  },
+  {
+    "name": "WHISKY",
+    "point": "510841N 0051911E",
+    "type": "IFR"
+  },
+  {
+    "name": "ECHO",
+    "point": "511646N 0050150E",
+    "type": "IFR"
+  },
+  {
+    "name": "LIBVA",
+    "point": "504542N 0053830E",
+    "type": "IFR"
+  },
+  {
+    "name": "ALHUV",
+    "point": "503914N 0052814E",
+    "type": "IFR"
+  }
+]

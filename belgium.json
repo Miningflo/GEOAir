@@ -1,0 +1,219 @@
+[
+  {
+    "name": "CUTOFF",
+    "color": "black",
+    "lower": 0,
+    "upper": 0,
+    "type": "polygon",
+    "points": [
+      "512560N 0043999E",
+      "495527N 0044848E",
+      "474392N 0073220E",
+      "504294N 0151725E",
+      "521124N 0162086E",
+      "551111N 0152285E",
+      "560487N 0123179E",
+      "545013N 0092686E",
+      "522140N 0055611E",
+      "521639N 0051781E",
+      "520563N 0050569E",
+      "515294N 0051707E"
+    ]
+  },
+  {
+    "name": "KEEBEE CTR",
+    "lower": 0,
+    "upper": 2500,
+    "type": "polygon",
+    "color": "darkviolet",
+    "points": [
+      "511400N 0054800E",
+      "512140N 0053800E",
+      "510510N 0050700E",
+      "505780N 0051750E"
+    ]
+  },
+  {
+    "name": "TRA SOUTH",
+    "lower": 19500,
+    "upper": 66000,
+    "type": "polygon",
+    "color": "darkgreen",
+    "points": [
+      "494760N 0045109E",
+      "501014N 0045249E",
+      "501929N 0061860E",
+      "493278N 0054911E"
+    ]
+  },
+
+  {
+    "name": "TRA NB",
+    "lower": 19500,
+    "upper": 66000,
+    "type": "polygon",
+    "color": "darkgreen",
+    "points": [
+      "505400N 0043300E",
+      "512600N 0043000E",
+      "512600N 0050500E",
+      "511000N 0054629E",
+      "505400N 0054629E"
+
+    ]
+  },
+  {
+    "name": "PAMPA RANGE",
+    "lower": 0,
+    "upper": 19500,
+    "type": "polygon",
+    "points": [
+      "505655N 0054502E",
+      "510805N 0055036E",
+      "510557N 0051951E",
+      "505533N 0051951E"
+    ]
+  },
+  {
+    "name": "ELSENBORN RANGE",
+    "lower": 0,
+    "upper": 17000,
+    "type": "polygon",
+    "points": [
+      "502557N 0062234E",
+      "503000N 0062000E",
+      "503117N 0061200E",
+      "502557N 0060600E"
+    ]
+  },
+  {
+    "name": "TANKER",
+    "lower": 25000,
+    "upper": 30000,
+    "type": "polygon",
+    "color": "orange",
+    "points": [
+      "505844N 0062540E",
+      "514556N 0061248E",
+      "514831N 0063786E",
+      "510220N 0065316E"
+    ]
+  },
+  {
+    "name": "LIEGE CTR",
+    "lower": 0,
+    "upper": 2500,
+    "type": "circle",
+    "color": "darkviolet",
+    "center": "503834N 0052682E",
+    "radius": 9
+  },
+  {
+    "name": "BRUSTEM GOETSENHOVEN CTR",
+    "lower": 0,
+    "upper": 2500,
+    "type": "circle",
+    "color": "darkviolet",
+    "center": "504666N 0050450E",
+    "radius": 7
+  },
+  {
+    "name": "EBR03 DIEST",
+    "lower": 0,
+    "upper": 3500,
+    "type": "circle",
+    "color": "orange",
+    "center": "505957N 0050355E",
+    "radius": 3
+  },
+  {
+    "name": "LUXEMBOURG CTR",
+    "lower": 0,
+    "upper": 2500,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "493756N 0061265E",
+    "radius": 10
+  },
+  {
+    "name": "EINDHOVEN CTR",
+    "lower": 0,
+    "upper": 3000,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "512708N 0052256E",
+    "radius": 8
+  },
+  {
+    "name": "VOLKEL CTR",
+    "lower": 0,
+    "upper": 3000,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "513943N 0054261E",
+    "radius": 8
+  },
+  {
+    "name": "GILZE RIJEN CTR",
+    "lower": 0,
+    "upper": 3000,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "513404N 0045590E",
+    "radius": 7
+  },
+  {
+    "name": "SOESTERBERG CTR",
+    "lower": 0,
+    "upper": 3000,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "520763N 0051663E",
+    "radius": 7
+  },
+  {
+    "name": "GEILENKIRCHEN CTR",
+    "lower": 0,
+    "upper": 3000,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "505764N 0060261E",
+    "radius": 10
+  },
+  {
+    "name": "NOERVENICH CTR",
+    "lower": 0,
+    "upper": 2900,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "504986N 0063948E",
+    "radius": 8
+  },
+  {
+    "name": "RAMSTEIN CTR",
+    "lower": 0,
+    "upper": 3600,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "492613N 0073592E",
+    "radius": 10
+  },
+  {
+    "name": "SPANGDAHLEM CTR",
+    "lower": 0,
+    "upper": 3700,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "495862N 0064198E",
+    "radius": 8
+  },
+  {
+    "name": "BUECHEL CTR",
+    "lower": 0,
+    "upper": 4100,
+    "type": "circle",
+    "color": "darkcyan",
+    "center": "501043N 0070382E",
+    "radius": 8
+  }
+]

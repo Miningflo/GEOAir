@@ -3,16 +3,20 @@ function pointconverter(point) {
     point = point.split(" ")
     point.forEach(coord => {
         let factor = (("NE".includes(coord.split("").pop())) ? 1 : -1)
-        coord = factor * parseInt(coord.slice(0, -1)) / 10000
+        let raw = parseInt(coord.slice(0, -1)) / 10000
+        let deg = Math.floor(raw)
+        let min = (raw - deg) / 0.6
+        coord = factor * (deg + min)
         res.push(coord)
     })
     return res
 }
 
-function convert(limit){
-    if(limit === 0) return "GND"
-    if(limit <= 7000) return limit + "FT"
-    return "FL" + (Math.floor(limit/500))*5
+function convert(limit) {
+    if (limit === 0) return "GND"
+    if (limit === 66000) return "UNL"
+    if (limit <= 4500) return limit + "FT"
+    return "FL" + (Math.floor(limit / 500)) * 5
 }
 
 
@@ -36,7 +40,7 @@ window.onload = function () {
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([42.48, 42.18]),
+            center: ol.proj.fromLonLat([5.2, 51.10]),
             zoom: 11
         })
     });
@@ -69,7 +73,7 @@ window.onload = function () {
 
     map.addLayer(pointLayer)
 
-    fetch("./points.json").then(response => response.json()).then(points => {
+    fetch("./pointsBE.json").then(response => response.json()).then(points => {
         let features = []
         points.forEach(RP => {
             let point = new ol.Feature({
@@ -118,7 +122,7 @@ window.onload = function () {
     map.addLayer(areaLayer)
 
 
-    fetch("./airspace.json").then(response => response.json()).then(areas => {
+    fetch("./belgium.json").then(response => response.json()).then(areas => {
         let features = []
         areas.forEach(area => {
             let geometry
@@ -133,8 +137,8 @@ window.onload = function () {
             } else if (area.type === "circle") {
                 let center = ol.proj.fromLonLat(pointconverter(area.center).reverse())
                 let radius = area.radius * 1852
-                var circle = new ol.geom.Circle(center,radius/ol.proj.getPointResolution('EPSG:3857', 1, center))
-                geometry = ol.geom.Polygon.fromCircle(circle,100,90)
+                var circle = new ol.geom.Circle(center, radius / ol.proj.getPointResolution('EPSG:3857', 1, center))
+                geometry = ol.geom.Polygon.fromCircle(circle, 100, 90)
                 joinchar = " - "
             }
 
