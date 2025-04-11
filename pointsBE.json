@@ -7,22 +7,72 @@
   {
     "name": "WHISKY\nEBBL",
     "point": "510841N 0051911E",
-    "type": "IFR"
+    "type": "IFR",
+    "procedures": [
+      "HPMA-ILS or HPMA-LOC RWY 23R",
+      "HPMA-TACAN RWY 23R"
+    ]
   },
   {
     "name": "ECHO\nEBBL",
     "point": "511646N 0050150E",
-    "type": "IFR"
+    "type": "IFR",
+    "procedures": [
+      "HPMA-ILS or HPMA-LOC RWY 05L",
+      "HPMA-TACAN RWY 05L"
+    ]
   },
   {
     "name": "LIBVA\nEBLG",
     "point": "504542N 0053830E",
-    "type": "IFR"
+    "type": "IFR",
+    "procedures": [
+      "ILS or LOC RWY 22L"
+    ]
   },
   {
     "name": "ALHUV\nEBLG",
     "point": "503914N 0052814E",
-    "type": "IFR"
+    "type": "IFR",
+    "procedures": [
+      "ILS or LOC RWY 04R"
+    ]
+  },
+  {
+    "name": "VICTOR\nEBBE",
+    "point": "504614N 0044905E",
+    "type": "IFR",
+    "procedures": [
+      "ILS z or LOC z RWY 22R",
+      "TACAN z RWY 22R"
+    ]
+  },
+  {
+    "name": "DELTA\nEBBE",
+    "point": "503078N 0042476E",
+    "type": "IFR",
+    "procedures": [
+      "HPMA-TACAN RWY 04L",
+      "HPMA STAR TACAN 22R"
+    ]
+  },
+  {
+    "name": "ZULU\nEBFS",
+    "point": "501311N 0045462E",
+    "type": "IFR",
+    "procedures": [
+      "HPMA-ILS or HPMA-LOC RWY 26R",
+      "HPMA-TACAN RWY 26R"
+    ]
+  },
+  {
+    "name": "HOTEL\nEBFS",
+    "point": "500918N 0042601E",
+    "type": "IFR",
+    "procedures": [
+      "HPMA-ILS or HPMA-LOC RWY 08L",
+      "HPMA-TACAN RWY 08L"
+    ]
   },
   {
     "name": "ULTAV",

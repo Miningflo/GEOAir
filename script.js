@@ -13,6 +13,7 @@ function pointconverter(point) {
 }
 
 function convert(limit) {
+    if (limit === -1) return ""
     if (limit === 0) return "GND"
     if (limit === 66000) return "UNL"
     if (limit <= 4500) return limit + "FT"
@@ -140,9 +141,15 @@ window.onload = function () {
                 var circle = new ol.geom.Circle(center, radius / ol.proj.getPointResolution('EPSG:3857', 1, center))
                 geometry = ol.geom.Polygon.fromCircle(circle, 100, 90)
                 joinchar = " - "
+            } else if (area.type === "line") {
+                let line = []
+                area.points.forEach(point => {
+                    line.push(pointconverter(point).reverse())
+                })
+                geometry = new ol.geom.LineString(line).transform('EPSG:4326', 'EPSG:3857')
             }
 
-            let name = convert(area.upper) + joinchar + area.name + joinchar + convert(area.lower)
+            let name = convert(area.upper ?? -1) + joinchar + area.name + joinchar + convert(area.lower ?? -1)
             let feature = new ol.Feature({
                 geometry: geometry,
                 name: name,

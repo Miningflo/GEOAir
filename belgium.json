@@ -106,14 +106,14 @@
     "type": "circle",
     "color": "darkviolet",
     "center": "503834N 0052682E",
-    "radius": 9
+    "radius": 10
   },
   {
     "name": "BRUSTEM GOETSENHOVEN CTR",
     "lower": 0,
     "upper": 2500,
     "type": "circle",
-    "color": "darkviolet",
+    "color": "gray",
     "center": "504666N 0050450E",
     "radius": 7
   },
@@ -125,6 +125,27 @@
     "color": "orange",
     "center": "505957N 0050355E",
     "radius": 3
+  },
+  {
+    "name": "REMBA",
+    "type": "line",
+    "color": "magenta",
+    "points": [
+      "510307N 0050285E",
+      "503736N 0045044E",
+      "502495N 0050492E"
+    ]
+  },
+  {
+    "name": "LIEGE",
+    "type": "line",
+    "color": "magenta",
+    "points": [
+      "504744N 0052855E",
+      "502902N 0052944E",
+      "501694N 0052948E",
+      "501009N 0053010E"
+    ]
   },
   {
     "name": "FLORENNES CTR",
@@ -140,9 +161,9 @@
     "lower": 0,
     "upper": 2500,
     "type": "circle",
-    "color": "gray",
+    "color": "darkviolet",
     "center": "504528N 0044601E",
-    "radius": 9
+    "radius": 10
   },
   {
     "name": "SAINT-HUBERT CTR",
